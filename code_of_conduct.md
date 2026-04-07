@@ -45,4 +45,4 @@ Our team will be happy to help you contact hotel or venue security, local law en
 
 ### Report form
 
-During the conference, a report form will be availble on the local website: <https://brussels.evolang.org/code-of-conduct/>
+*During the conference, a report form will be availble on the local website: <https://brussels.evolang.org/code-of-conduct/>*
