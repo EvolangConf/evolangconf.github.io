@@ -3,7 +3,7 @@ title: Code of Conduct
 layout: default
 breadcrumb:
   text: Home
-  page: index.md
+  url: /
 redirect_from:
   - /codeofconduct
 ---

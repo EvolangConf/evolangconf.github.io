@@ -3,7 +3,7 @@ title: Organization
 layout: default
 breadcrumb:
   text: Home
-  page: index.md
+  url: /
 redirect_from:
   - /Organization
 ---

@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.4.1"
+#gem "jekyll", "~> 4.4.1"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
@@ -17,3 +17,5 @@ gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "jekyll-redirect-from", "~> 0.16.0"
+
+gem "github-pages", "~> 232", group: :jekyll_plugins

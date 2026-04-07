@@ -8,18 +8,18 @@ footer: Because nothing in linguistics makes sense except in the light of evolut
 primary_links:
   - text: Conference Details
     title: Evolang Home
-    page: index.md
+    url: /
   - text: Conference History
-    page: history.md
+    url: /history
   - text: Conference Organization
-    page: organization.md
+    url: /organization
   - text: Plovdiv 2026
     title: Details of Evolang XVI in Plovdiv, Bulgaria
     url: "https://evolang2026.org/"
   - text: Submission Instructions
-    page: submissions.md
+    url: /submissions
   - text: Code of Conduct
-    page: code_of_conduct.md
+    url: /code_of_conduct
 
 secondary_links:
   - text: Madison 2024

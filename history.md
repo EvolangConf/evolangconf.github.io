@@ -3,7 +3,7 @@ title: Conference History
 layout: default
 breadcrumb:
   text: Home
-  page: index.md
+  url: /
 redirect_from:
   - /History
 ---

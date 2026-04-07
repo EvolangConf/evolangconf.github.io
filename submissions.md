@@ -3,7 +3,7 @@ title: Call For Papers
 layout: default
 breadcrumb:
   text: Home
-  page: index.md
+  url: /
 ---
 
 ### how to submit
