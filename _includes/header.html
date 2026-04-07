@@ -1,0 +1,46 @@
+<div id="header-area" class="container-16">
+    <div id="title-group" class="grid-16">
+        <a href="/" title="{{ site.title }}"><img src="{{ site.logo.path }}" alt="{{ site.logo.alt }}" id="logo" /></a>
+    </div><!-- /title-group -->
+    <hr class="break"/>
+
+    {% if site.primary_links.size > 0 %}
+        <div id="header-links" class="grid-16">
+            <ul id="primary-nav" class="grid-16 {% if site.secondary_links.size > 0 %}has-secondary{% endif %}">
+                {% for link in site.primary_links %}
+                    {%- if link.page -%}
+                        {%- capture link_url -%}
+                        {%- link {{ link.page }} -%}
+                        {%- endcapture -%}
+                    {%- else -%}
+                        {%- assign link_url = link.url -%}
+                    {%- endif -%}
+                    {%- assign first = nil -%}{%- if forloop.first -%}{%- assign first = "first" -%}{%- endif -%}
+                    {%- assign last = nil -%}{%- if forloop.last -%}{%- assign last = "last" -%}{%- endif -%}
+                    {%- assign active = nil -%}{%- if page.url == link_url -%}{%- assign active = "active-trail active" -%}{%- endif -%}
+                    <li class="{{ first }} {{ last }} {{ active }}"><a href="{{ link_url }}" title="{{ link.title | default: link.text }}" class="{{ active }}">{{ link.text }}</a></li>
+                {% endfor %}
+            </ul>
+            {%- if site.secondary_links.size > 0 -%}
+                <hr class="break">
+                <ul id="secondary-nav" class="links secondary-links grid-16">
+                    {% for link in site.secondary_links %}
+                        {%- if link.page -%}
+                            {%- capture link_url -%}
+                            {%- link {{ link.page }} -%}
+                            {%- endcapture -%}
+                        {%- else -%}
+                            {%- assign link_url = link.url -%}
+                        {%- endif -%}
+                        {%- assign first = nil -%}{%- if forloop.first -%}{%- assign first = "first" -%}{%- endif -%}
+                        {%- assign last = nil -%}{%- if forloop.last -%}{%- assign last = "last" -%}{%- endif -%}
+                        <li class="{{ first }} {{ last }}"><a href="{{ link_url }}" title="{{ link.title | default: link.text }}">{{ link.text }}</a></li>
+                    {% endfor %}
+            {%- endif -%}
+        </div><!-- #header-links -->
+    {% else %}
+        <hr id="no-menu-rule" class="rule-bottom grid-16"/>
+    {% endif %}
+    <div id="masthead" class="grid-16"></div><!-- /masthead -->
+    <hr class="rule-top grid-16"/>
+</div><!-- /header-area -->

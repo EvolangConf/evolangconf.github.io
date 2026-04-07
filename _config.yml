@@ -1,0 +1,92 @@
+title: Evolution of Language International Conferences
+logo:
+  path: /assets/img/logo.png
+  alt: EVOLANG
+default_header_img: /assets/img/headers/birds.jpg
+footer: Because nothing in linguistics makes sense except in the light of evolution.
+
+primary_links:
+  - text: Conference Details
+    title: Evolang Home
+    page: index.md
+  - text: Conference History
+    page: history.md
+  - text: Conference Organization
+    page: organization.md
+  - text: Plovdiv 2026
+    title: Details of Evolang XVI in Plovdiv, Bulgaria
+    url: "https://evolang2026.org/"
+  - text: Submission Instructions
+    page: submissions.md
+  - text: Code of Conduct
+    page: code_of_conduct.md
+
+secondary_links:
+  - text: Madison 2024
+    title: Evolang 15
+    url: https://evolang2024.github.io/
+  - text: Kanazawa 2022
+    title: Joint Conference on Language Evolution
+    url: https://sites.google.com/view/joint-conf-language-evolution
+  - text: Brussels 2020
+    title: Evolang 13
+    url: https://brussels.evolang.org/
+  - text: Toruń 2018
+    title: Evolang 12
+    url: http://torun.evolang.org/
+  - text: New Orleans 2016
+    title: Evolang 11
+    url: http://neworleans.evolang.org/
+  - text: Vienna 2014
+    title: Evolang 10
+    url: http://vienna.evolang.org/
+  - text: Kyoto 2012
+    title: Evolang 9
+    url: http://kyoto.evolang.org/
+  - text: Utrecht 2010
+    title: Evolang 8
+    url: http://www.illc.uva.nl/LaCo/evolang/
+  - text: Barcelona 2008
+    title: Evolang 7
+    url: http://stel.ub.edu/evolang2008/
+  - text: Rome 2006
+    title: Evolang 6
+    url: http://www.ling.ed.ac.uk/evolang/2006
+  - text: Leipzig 2004
+    title: Evolang 5
+    url: http://www.ling.ed.ac.uk/evolang/2004
+  - text: Harvard 2002
+    title: Evolang 4
+    url: http://www.ling.ed.ac.uk/evolang/2002
+  - text: Paris 2000
+    title: Evolang 3
+    url: http://www.ling.ed.ac.uk/evolang/2000
+  - text: London 1998
+    title: Evolang 2
+    url: http://www.ling.ed.ac.uk/evolang/1998
+  - text: Edinburgh 1996
+    title: Evolang 1
+    url: http://www.ling.ed.ac.uk/evolang/1996
+
+upcoming:
+  text: Plovdiv 2026
+  title: Evolang 16
+  url: https://evolang2026.org/
+
+sidebar_extra:
+  - title: Share
+  - title: Mailing List
+    md: You can subscribe to the Evolang email list by clicking [here](http://evolang.us16.list-manage.com/subscribe?u=3c02037f31127170cc4814a4e&id=ddb5e241fe).
+  - title: Downloads
+    md: |
+      The Evolang Kyoto student volume is available for download [here](http://kyoto.evolang.org/sites/default/files/student_volume.pdf).
+      Proceedings Evolang New Orleans are available for download [here](http://evolang.org/neworleans/).
+
+
+permalink: /:title
+
+plugins:
+  - jekyll-redirect-from
+
+exclude:
+  - README.md

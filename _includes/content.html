@@ -1,0 +1,32 @@
+<div id="content-area" class="container-16">
+    <div id="content" class="{% if page.no-sidebar %}grid-16{% else %}grid-12 push-4{% endif %}">
+        {%- if page.breadcrumb -%}
+            {%- if page.breadcrumb.page -%}
+                {%- capture breadcrumb_url -%}
+                {%- link {{ page.breadcrumb.page }} -%}
+                {%- endcapture -%}
+            {%- else -%}
+                {%- assign breadcrumb_url = page.breadcrumb.url -%}
+            {%- endif -%}
+            <div class="breadcrumb">
+                <a href="{{ breadcrumb_url }}">{{ page.breadcrumb.text }}</a>
+            </div>
+        {%- endif -%}
+        {%- if page.title -%}
+            <div id="page-headline" class="clear-block">
+                <h1 id="page-title">{{ page.title | escape }}</h1>
+            </div><!-- #page-headline -->
+        {%- endif -%}
+
+        <div id="node-1" class="node node-page clear-block">
+            <div class="content clear-block">
+                {{content}}
+            </div>
+        </div>
+    </div><!-- /content -->
+    {%- unless page.no-sidebar -%}
+        <div id="left-sidebar" class="grid-4 pull-12">
+            {% include sidebar.html %}
+        </div><!-- /left-sidebar -->
+    {%- endunless -%}
+</div><!-- /content-area -->

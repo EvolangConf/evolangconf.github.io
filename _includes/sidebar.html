@@ -1,0 +1,39 @@
+<div id="block-menu-menu-upcoming" class="block block-menu block-left">
+    <h2>Next Conference</h2>
+    {%- if site.upcoming.page -%}
+        {%- capture upcoming_url -%}
+        {%- link {{ site.upcoming.page }} -%}
+        {%- endcapture -%}
+    {%- else -%}
+        {%- assign upcoming_url = site.upcoming.url -%}
+    {%- endif -%}
+    <ul class="menu">
+        <li class="leaf first last"><a href="{{ upcoming_url }}" title="{{ site.upcoming.title | site.upcoming.text }}">{{ site.upcoming.text }}</a></li>
+    </ul>
+</div><!-- /block-menu-menu-upcoming -->
+<hr class="break"><div id="block-menu-primary-links" class="block block-menu block-left">
+    <h2>Past Conferences</h2>
+    <ul class="menu">
+        {% for link in site.secondary_links %}
+            {%- if link.page -%}
+                {%- capture link_url -%}
+                {%- link {{ link.page }} -%}
+                {%- endcapture -%}
+            {%- else -%}
+                {%- assign link_url = link.url -%}
+            {%- endif -%}
+            {%- assign first = nil -%}{%- if forloop.first -%}{%- assign first = "first" -%}{%- endif -%}
+            {%- assign last = nil -%}{%- if forloop.last -%}{%- assign last = "last" -%}{%- endif -%}
+            <li class="leaf {{ first }} {{ last }}"><a href="{{ link_url }}" title="{{ link.title | default: link.text }}">{{ link.text }}</a></li>
+        {% endfor %}
+    </ul>
+</div><!-- /block-menu-primary-links -->
+<hr class="break">
+
+{% for section in site.sidebar_extra %}
+    <div class="block block-menu block-left">
+        <h2>{{section.title}}</h2>
+        {{ section.md | markdownify }}
+    </div>
+    <hr class="break">
+{% endfor %}

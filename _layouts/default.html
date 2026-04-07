@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+    <head>
+        <title>{%- if page.title -%}{{ page.title }} | {%- endif -%}{{ site.title }}</title>
+        <!--<?php print $head; ?>-->
+        
+        <link type="text/css" rel="stylesheet" media="all" href="/assets/css/framework/reset.css">
+        <link type="text/css" rel="stylesheet" media="all" href="/assets/css/framework/960.css">
+        <link type="text/css" rel="stylesheet" media="all" href="/assets/css/defaults.css">
+        <link type="text/css" rel="stylesheet" media="all" href="/assets/css/system.css">
+        <link type="text/css" rel="stylesheet" media="all" href="/assets/css/system-menus.css">
+        <link type="text/css" rel="stylesheet" media="all" href="/assets/css/user.css">
+        <link type="text/css" rel="stylesheet" media="all" href="/assets/css/typography.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="/assets/css/style.css">
+        <link type="text/css" rel="stylesheet" media="print" href="/assets/css/print.css">
+        <style type="text/css">#masthead{background-image:url("{{ site.default_header_img }}");}</style>
+
+        <script src="https://code.jquery.com/jquery-4.0.0.slim.min.js" integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous"></script>
+    </head>
+    <body class="nitobe">
+        <div id="page-wrapper" class="clear-block">
+            {% include header.html %}
+            <hr class="break"/>
+            {% include content.html %}
+            <hr class="break"/>
+            {% include footer.html %}
+            <hr class="break"/> 
+        </div><!-- /page-wrapper -->
+
+        {% assign headers = site.static_files | where_exp:"image", "image.path contains '/assets/img/headers/'" %}
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var names = [{% for header in headers %}"{{header.path}}", {% endfor %}];
+                $('#masthead').css('background-image', 'url(' + names[Math.floor(Math.random() * names.length)] + ')');
+            });
+        </script>
+    </body>
+</html>
