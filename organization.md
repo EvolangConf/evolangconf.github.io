@@ -1,5 +1,5 @@
 ---
-title: Organization
+title: Conference Organization
 layout: default
 breadcrumb:
   text: Home
@@ -32,5 +32,3 @@ The committee considers matters of general policy and is consulted in cases of p
 - [Natalie Uomini](https://natalieuomini.wordpress.com/about/) (University of Zurich and University of Arizona)
 - [Sławomir Wacewicz](http://cles.umk.pl/) (Nicolaus Copernicus University)
 - [Przemysław Żywiczyński](http://cles.umk.pl/) (Nicolaus Copernicus University)
-
-  
