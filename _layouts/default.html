@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-        <!--<?php print $head; ?>-->
+        <link rel="shortcut icon" href="{{ "/assets/img/favicon.ico" | relative_url }}" type="image/x-icon">
         
         <link type="text/css" rel="stylesheet" media="all" href="{{ "/assets/css/framework/reset.css" | relative_url }}">
         <link type="text/css" rel="stylesheet" media="all" href="{{ "/assets/css/framework/960.css" | relative_url }}">
