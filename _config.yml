@@ -82,7 +82,7 @@ sidebar_extra:
       The Evolang Kyoto student volume is available for download [here](http://kyoto.evolang.org/sites/default/files/student_volume.pdf).
       Proceedings Evolang New Orleans are available for download [here](http://evolang.org/neworleans/).
 
-
+baseurl: /evolang_jekyll
 permalink: /:title
 
 plugins:

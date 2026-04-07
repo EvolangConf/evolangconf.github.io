@@ -1,6 +1,6 @@
 <div id="header-area" class="container-16">
     <div id="title-group" class="grid-16">
-        <a href="/" title="{{ site.title }}"><img src="{{ site.logo.path }}" alt="{{ site.logo.alt }}" id="logo" /></a>
+        <a href="/" title="{{ site.title }}"><img src="{{ site.logo.path | relative_url }}" alt="{{ site.logo.alt }}" id="logo" /></a>
     </div><!-- /title-group -->
     <hr class="break"/>
 
@@ -18,7 +18,7 @@
                     {%- assign first = nil -%}{%- if forloop.first -%}{%- assign first = "first" -%}{%- endif -%}
                     {%- assign last = nil -%}{%- if forloop.last -%}{%- assign last = "last" -%}{%- endif -%}
                     {%- assign active = nil -%}{%- if page.url == link_url -%}{%- assign active = "active-trail active" -%}{%- endif -%}
-                    <li class="{{ first }} {{ last }} {{ active }}"><a href="{{ link_url }}" title="{{ link.title | default: link.text }}" class="{{ active }}">{{ link.text }}</a></li>
+                    <li class="{{ first }} {{ last }} {{ active }}"><a href="{{ link_url | relative_url }}" title="{{ link.title | default: link.text }}" class="{{ active }}">{{ link.text }}</a></li>
                 {% endfor %}
             </ul>
             {%- if site.secondary_links.size > 0 -%}
@@ -34,7 +34,7 @@
                         {%- endif -%}
                         {%- assign first = nil -%}{%- if forloop.first -%}{%- assign first = "first" -%}{%- endif -%}
                         {%- assign last = nil -%}{%- if forloop.last -%}{%- assign last = "last" -%}{%- endif -%}
-                        <li class="{{ first }} {{ last }}"><a href="{{ link_url }}" title="{{ link.title | default: link.text }}">{{ link.text }}</a></li>
+                        <li class="{{ first }} {{ last }}"><a href="{{ link_url | relative_url }}" title="{{ link.title | default: link.text }}">{{ link.text }}</a></li>
                     {% endfor %}
             {%- endif -%}
         </div><!-- #header-links -->

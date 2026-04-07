@@ -8,7 +8,7 @@
         {%- assign upcoming_url = site.upcoming.url -%}
     {%- endif -%}
     <ul class="menu">
-        <li class="leaf first last"><a href="{{ upcoming_url }}" title="{{ site.upcoming.title | site.upcoming.text }}">{{ site.upcoming.text }}</a></li>
+        <li class="leaf first last"><a href="{{ upcoming_url | relative_url }}" title="{{ site.upcoming.title | site.upcoming.text }}">{{ site.upcoming.text }}</a></li>
     </ul>
 </div><!-- /block-menu-menu-upcoming -->
 <hr class="break"><div id="block-menu-primary-links" class="block block-menu block-left">
@@ -24,7 +24,7 @@
             {%- endif -%}
             {%- assign first = nil -%}{%- if forloop.first -%}{%- assign first = "first" -%}{%- endif -%}
             {%- assign last = nil -%}{%- if forloop.last -%}{%- assign last = "last" -%}{%- endif -%}
-            <li class="leaf {{ first }} {{ last }}"><a href="{{ link_url }}" title="{{ link.title | default: link.text }}">{{ link.text }}</a></li>
+            <li class="leaf {{ first }} {{ last }}"><a href="{{ link_url | relative_url }}" title="{{ link.title | default: link.text }}">{{ link.text }}</a></li>
         {% endfor %}
     </ul>
 </div><!-- /block-menu-primary-links -->

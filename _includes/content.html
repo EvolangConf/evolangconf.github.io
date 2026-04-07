@@ -9,7 +9,7 @@
                 {%- assign breadcrumb_url = page.breadcrumb.url -%}
             {%- endif -%}
             <div class="breadcrumb">
-                <a href="{{ breadcrumb_url }}">{{ page.breadcrumb.text }}</a>
+                <a href="{{ breadcrumb_url | relative_url }}">{{ page.breadcrumb.text }}</a>
             </div>
         {%- endif -%}
         {%- if page.title -%}
