@@ -13,15 +13,18 @@ primary_links:
     url: /history
   - text: Conference Organization
     url: /organization
-  - text: Plovdiv 2026
-    title: Details of Evolang XVI in Plovdiv, Bulgaria
-    url: "https://evolang2026.org/"
+  - text: Nijmegen 2028
+    title: Details of Evolang XVII in Nijmegen, Netherlands
+    url: ""
   - text: Submission Instructions
     url: /submissions
   - text: Code of Conduct
     url: /code_of_conduct
 
 secondary_links:
+  - text: Plovdiv 2026
+    title: Evolang 16
+    url: https://sites.google.com/york.ac.uk/evolang2026/home
   - text: Madison 2024
     title: Evolang 15
     url: https://evolang2024.github.io/
