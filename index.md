@@ -11,7 +11,7 @@ Normal standards of academic excellence apply. Submitted papers should make clea
 
 ### next conference
 
-[Evolang XVI](https://evolang2026.org/) will take place in Plovdiv, Bulgaria. April 7-10th, 2026. Local Organizers: [Dimitar Kazakov](mailto:dimitar.kazakov@york.ac.uk) and [Giuseppe Longobardi](mailto:giuseppe.longobardi@york.ac.uk)
+Evolang XVII will take place in Nijmegen Netherlands in Spring or early Summer 2028 (Exact dates TBD). Local Organizers: [Limor Raviv](mailto:limor.raviv@mpi.nl), [Asli Ozyurek](asli.ozyurek@mpi.nl) and [Simon Fisher](simon.fisher@mpi.nl)
 
 ### conference organizational cycle
 
