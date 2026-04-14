@@ -11,7 +11,7 @@ Normal standards of academic excellence apply. Submitted papers should make clea
 
 ### next conference
 
-Evolang XVII will take place in Nijmegen Netherlands in Spring or early Summer 2028 (Exact dates TBD). Local Organizers: [Limor Raviv](mailto:limor.raviv@mpi.nl), [Asli Ozyurek](asli.ozyurek@mpi.nl) and [Simon Fisher](simon.fisher@mpi.nl)
+Evolang XVII will take place in Nijmegen Netherlands in Spring or early Summer 2028 (Exact dates TBD). Local Organizers: [Limor Raviv](mailto:limor.raviv@mpi.nl), [Asli Ozyurek](mailto:asli.ozyurek@mpi.nl) and [Simon Fisher](mailto:simon.fisher@mpi.nl)
 
 ### conference organizational cycle
 
